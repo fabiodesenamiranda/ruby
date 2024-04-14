@@ -1,0 +1,17 @@
+<div class="container">
+    <h2 style="text-align:center;">Posts</h2>
+    <hr>
+
+    <%= 5 + 5 %>
+    <h3>Admin: <%=@author%></h3>
+    <ul class="list-group">
+    <% @posts.each do |post| %>
+        <li class="list-group-item">
+            <%= post[:title]%> - <%= post[:body]%>
+        </li>
+    <%end%> 
+    </ul>
+
+    <a href="/estudantes">Estudantes</a>
+    <%= link_to "Estudantes", estudantes_path %>
+</div>
